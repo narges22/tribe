@@ -5,7 +5,7 @@ const Home: FC = () => {
   return (
     <>
       <main>
-        <h2>Welcome to the homepage!</h2>
+        <h2>Welcome to the my app!</h2>
         <Spaces />
       </main>
     </>
