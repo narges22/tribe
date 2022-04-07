@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Posts from "../../components/posts";
 
-const NewsList: FC = () => {
+const PostList: FC = () => {
   return (
     <div>
       <Posts />
@@ -9,4 +9,4 @@ const NewsList: FC = () => {
   );
 };
 
-export default NewsList;
+export default PostList;

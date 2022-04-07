@@ -1,11 +1,20 @@
-import { FC } from "react";
+import { TribeClient } from "@tribeplatform/gql-client";
+import { FC, useEffect } from "react";
+import Dialog from "../../components/dialog";
 import Spaces from "../../components/Spaces";
 
 const Home: FC = () => {
   return (
     <>
       <main>
-        <h2>Welcome to the my app!</h2>
+        <div className="lg:w-3/4 m-auto flex justify-between p-3">
+          <div className="flex-1 flex justify-start font-bold text-xl">
+            Spaces
+          </div>
+          <div className="flex-1 flex justify-end">
+            <Dialog />
+          </div>
+        </div>
         <Spaces />
       </main>
     </>

@@ -11,7 +11,7 @@ ReactDOM.render(
     <TribeProvider
       config={{
         accessToken:
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkdVRVNUX0dycGVKdlh4M3E3a05zTSIsIm5ldHdvcmtJZCI6IlN5WENCNWpVTzQiLCJuZXR3b3JrRG9tYWluIjoibmFyZ2VzLnRyaWJlcGxhdGZvcm0uY29tIiwidG9rZW5UeXBlIjoiR1VFU1QiLCJlbnRpdHlJZCI6bnVsbCwicGVybWlzc2lvbkNvbnRleHQiOm51bGwsInBlcm1pc3Npb25zIjpudWxsLCJpYXQiOjE2NDg5Njk4MzEsImV4cCI6MTY1MTU2MTgzMX0.k6tYGEJmLO-FI51AJhCftTKZlyo8xSE3G6HT-aScIVY",
+          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InBabHhkbWFxRXAiLCJuZXR3b3JrSWQiOiJTeVhDQjVqVU80IiwibmV0d29ya0RvbWFpbiI6Im5hcmdlcy50cmliZXBsYXRmb3JtLmNvbSIsInRva2VuVHlwZSI6IlVTRVIiLCJlbnRpdHlJZCI6bnVsbCwicGVybWlzc2lvbkNvbnRleHQiOm51bGwsInBlcm1pc3Npb25zIjpudWxsLCJzZXNzaW9uSWQiOiJSUVpFa0xJOHR6c2JZamI3WU80d09tNVY4ejU2a3RraEhpVG03VnBIZG9Qa2liZGhZNCIsImlhdCI6MTY0OTMyMzY2MCwiZXhwIjoxNjUxOTE1NjYwfQ.lk1EdIWuLPMeDe2FwNT4qqEfwZPJNQbExrHERgvvwrw",
         baseUrl: "https://app.tribe.so/graphql",
       }}
     >

@@ -37,12 +37,19 @@ const Posts: FC = () => {
         <Loading />
       ) : (
         posts.nodes?.map((post, i) => (
-          <div className="flex gap-2 bg-hacker-body p-2" key={post?.id}>
-            <div className="flex flex-col justify-center">{i + 1}.</div>
+          <div
+            className="flex gap-2 bg-white drop-shadow-md p-5 my-4 rounded"
+            key={post?.id}
+          >
+            {/* <div className="flex flex-col justify-center">{i + 1}.</div> */}
             <div className="flex flex-col flex-grow">
-              <div>{post.title}</div>
+              <div className=" py-2 font-bold">{post.title}</div>
+              <div
+                className="py-2"
+                dangerouslySetInnerHTML={{ __html: post?.shortContent || "" }}
+              ></div>
               <div className="flex gap-2 text-xs text-gray-500">
-                <div>By {post.createdBy?.member?.name}</div>|
+                <div>By {post.owner?.member?.name}</div>|
                 <div>{post.reactionsCount} upvotes</div>|
                 <div>{post.repliesCount} comments</div>
               </div>

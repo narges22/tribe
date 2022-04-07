@@ -18,7 +18,6 @@ export const SpaceContextProvider: FC = ({ children }) => {
   });
 
   const fetchSpaces = () => {
-    console.log("space called");
     client.spaces
       .list(
         {
@@ -34,7 +33,6 @@ export const SpaceContextProvider: FC = ({ children }) => {
   };
 
   const GetSpaces = () => {
-    console.log("space", spaces.nodes?.length);
     if (spaces.nodes && spaces.nodes?.length > 0) {
       return spaces;
     } else {
@@ -42,8 +40,14 @@ export const SpaceContextProvider: FC = ({ children }) => {
     }
   };
 
+  const onAddNewSpace = (name: string) => {
+    return client.spaces.create({ input: { name } }).then((res) => {
+      fetchSpaces();
+    });
+  };
+
   return (
-    <SpaceContext.Provider value={{ GetSpaces }}>
+    <SpaceContext.Provider value={{ GetSpaces, onAddNewSpace }}>
       {children}
     </SpaceContext.Provider>
   );
