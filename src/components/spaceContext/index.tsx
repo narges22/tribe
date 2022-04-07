@@ -21,7 +21,7 @@ export const SpaceContextProvider: FC = ({ children }) => {
     client.spaces
       .list(
         {
-          limit: 10,
+          limit: 15,
         },
         "all"
       )
